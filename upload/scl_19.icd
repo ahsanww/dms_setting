@@ -1,0 +1,4940 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created by PT. MGI with OMICRON IEDScout 4.20 licensed to -->
+<!--SCL Schema Version 1.4 (2005/08/11)-->
+<SCL xmlns="http://www.iec.ch/61850/2003/SCL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.iec.ch/61850/2003/SCL SCL.xsd">
+	<Header id="" version="" revision="" toolID="OMICRON IEDScout" nameStructure="IEDName" />
+	<Communication>
+		<SubNetwork name="NONE" type="8-MMS">
+			<ConnectedAP iedName="E04F501" apName="P1">
+				<Address>
+					<P type="IP" xsi:type="tP_IP">172.20.105.169</P>
+					<P type="OSI-TSEL" xsi:type="tP_OSI-TSEL">0001</P>
+					<P type="OSI-SSEL" xsi:type="tP_OSI-SSEL">0001</P>
+					<P type="OSI-PSEL" xsi:type="tP_OSI-PSEL">00000001</P>
+					<P type="OSI-AP-Title">"1,1,1,999,1"</P>
+					<P type="OSI-AP-Invoke" xsi:type="tP_OSI-AP-Invoke">0</P>
+					<P type="OSI-AE-Qualifier" xsi:type="tP_OSI-AE-Qualifier">12</P>
+					<P type="OSI-AE-Invoke" xsi:type="tP_OSI-AE-Invoke">0</P>
+				</Address>
+			</ConnectedAP>
+		</SubNetwork>
+	</Communication>
+	<IED name="E04F501">
+		<Services>
+			<DynAssociation />
+			<GetDirectory />
+			<GetDataObjectDefinition />
+			<DataObjectDirectory />
+			<GetDataSetValue />
+			<SetDataSetValue />
+			<DataSetDirectory />
+			<ConfDataSet max="0" modify="false" />
+			<DynDataSet max="42" />
+			<ReadWrite />
+			<SettingGroups>
+				<SGEdit />
+				<ConfSG />
+			</SettingGroups>
+			<ConfReportControl max="55" />
+			<GetCBValues />
+			<ReportSettings rptID="Dyn" optFields="Dyn" bufTime="Dyn" trgOps="Dyn" intgPd="Dyn" />
+			<ConfLNs fixPrefix="true" fixLnInst="true" />
+			<GOOSE max="0" />
+			<GSSE max="0" />
+			<FileHandling />
+		</Services>
+		<AccessPoint name="P1">
+			<Server>
+				<Authentication none="true" />
+				<LDevice inst="Application">
+					<LN0 lnType="E04F501Application.LLN0" lnClass="LLN0" inst="">
+						<ReportControl name="A_URCB" rptID="E04F501Application/LLN0$RP$A_URCB" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_URCB_1" rptID="E04F501Application/LLN0$RP$A_URCB_1" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_URCB_2" rptID="E04F501Application/LLN0$RP$A_URCB_2" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_URCB_3" rptID="E04F501Application/LLN0$RP$A_URCB_3" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_URCB_4" rptID="E04F501Application/LLN0$RP$A_URCB_4" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_URCB_5" rptID="E04F501Application/LLN0$RP$A_URCB_5" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_URCB_6" rptID="E04F501Application/LLN0$RP$A_URCB_6" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_URCB_7" rptID="E04F501Application/LLN0$RP$A_URCB_7" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_URCB_8" rptID="E04F501Application/LLN0$RP$A_URCB_8" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_URCB_9" rptID="E04F501Application/LLN0$RP$A_URCB_9" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_URCB_10" rptID="E04F501Application/LLN0$RP$A_URCB_10" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_URCB_11" rptID="E04F501Application/LLN0$RP$A_URCB_11" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_URCB_12" rptID="E04F501Application/LLN0$RP$A_URCB_12" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_URCB_13" rptID="E04F501Application/LLN0$RP$A_URCB_13" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_URCB_14" rptID="E04F501Application/LLN0$RP$A_URCB_14" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_URCB_15" rptID="E04F501Application/LLN0$RP$A_URCB_15" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_URCB_16" rptID="E04F501Application/LLN0$RP$A_URCB_16" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_URCB_17" rptID="E04F501Application/LLN0$RP$A_URCB_17" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_URCB_18" rptID="E04F501Application/LLN0$RP$A_URCB_18" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_URCB_19" rptID="E04F501Application/LLN0$RP$A_URCB_19" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_URCB_20" rptID="E04F501Application/LLN0$RP$A_URCB_20" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_URCB_21" rptID="E04F501Application/LLN0$RP$A_URCB_21" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_URCB_22" rptID="E04F501Application/LLN0$RP$A_URCB_22" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_URCB_23" rptID="E04F501Application/LLN0$RP$A_URCB_23" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_URCB_24" rptID="E04F501Application/LLN0$RP$A_URCB_24" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_URCB_25" rptID="E04F501Application/LLN0$RP$A_URCB_25" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_URCB_26" rptID="E04F501Application/LLN0$RP$A_URCB_26" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_URCB_27" rptID="E04F501Application/LLN0$RP$A_URCB_27" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_URCB_28" rptID="E04F501Application/LLN0$RP$A_URCB_28" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_URCB_29" rptID="E04F501Application/LLN0$RP$A_URCB_29" buffered="false" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_BRCB" rptID="E04F501Application/LLN0$BR$A_BRCB" buffered="true" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_BRCB_1" rptID="E04F501Application/LLN0$BR$A_BRCB_1" buffered="true" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_BRCB_2" rptID="E04F501Application/LLN0$BR$A_BRCB_2" buffered="true" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_BRCB_3" rptID="E04F501Application/LLN0$BR$A_BRCB_3" buffered="true" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_BRCB_4" rptID="E04F501Application/LLN0$BR$A_BRCB_4" buffered="true" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_BRCB_5" rptID="E04F501Application/LLN0$BR$A_BRCB_5" buffered="true" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_BRCB_6" rptID="E04F501Application/LLN0$BR$A_BRCB_6" buffered="true" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_BRCB_7" rptID="E04F501Application/LLN0$BR$A_BRCB_7" buffered="true" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_BRCB_8" rptID="E04F501Application/LLN0$BR$A_BRCB_8" buffered="true" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_BRCB_9" rptID="E04F501Application/LLN0$BR$A_BRCB_9" buffered="true" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_BRCB_10" rptID="E04F501Application/LLN0$BR$A_BRCB_10" buffered="true" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_BRCB_11" rptID="E04F501Application/LLN0$BR$A_BRCB_11" buffered="true" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_BRCB_12" rptID="E04F501Application/LLN0$BR$A_BRCB_12" buffered="true" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_BRCB_13" rptID="E04F501Application/LLN0$BR$A_BRCB_13" buffered="true" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_BRCB_14" rptID="E04F501Application/LLN0$BR$A_BRCB_14" buffered="true" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_BRCB_15" rptID="E04F501Application/LLN0$BR$A_BRCB_15" buffered="true" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_BRCB_16" rptID="E04F501Application/LLN0$BR$A_BRCB_16" buffered="true" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_BRCB_17" rptID="E04F501Application/LLN0$BR$A_BRCB_17" buffered="true" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_BRCB_18" rptID="E04F501Application/LLN0$BR$A_BRCB_18" buffered="true" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_BRCB_19" rptID="E04F501Application/LLN0$BR$A_BRCB_19" buffered="true" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_BRCB_20" rptID="E04F501Application/LLN0$BR$A_BRCB_20" buffered="true" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_BRCB_21" rptID="E04F501Application/LLN0$BR$A_BRCB_21" buffered="true" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_BRCB_22" rptID="E04F501Application/LLN0$BR$A_BRCB_22" buffered="true" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_BRCB_23" rptID="E04F501Application/LLN0$BR$A_BRCB_23" buffered="true" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<ReportControl name="A_BRCB_24" rptID="E04F501Application/LLN0$BR$A_BRCB_24" buffered="true" bufTime="0" intgPd="0" confRev="1">
+							<TrgOps dchg="false" qchg="false" dupd="false" period="false" />
+							<OptFields seqNum="false" timeStamp="false" dataSet="false" reasonCode="false" dataRef="false" entryID="false" configRef="false" />
+							<RptEnabled max="1" />
+						</ReportControl>
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>direct-with-normal-security</Val>
+							</DAI>
+						</DOI>
+						<DOI name="LEDRs">
+							<DAI name="ctlModel">
+								<Val>direct-with-normal-security</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>05.07.80</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="ldNs">
+								<Val>IEC 61850-7-4:2003</Val>
+							</DAI>
+						</DOI>
+						<DOI name="LocKey">
+							<DAI name="dataNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+						<DOI name="LocSta">
+							<DAI name="ctlModel">
+								<Val>direct-with-normal-security</Val>
+							</DAI>
+							<DAI name="dataNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+						<SettingControl numOfSGs="1" actSG="1" />
+					</LN0>
+					<LN lnType="E04F501Application.CALH0" lnClass="CALH" inst="0">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501Application.LPHD0" lnClass="LPHD" inst="0">
+						<DOI name="PrcModIna">
+							<DAI name="dataNs">
+								<Val>SIPROTEC5/userdefined</Val>
+							</DAI>
+						</DOI>
+						<DOI name="PhyNam">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="hwRev">
+								<Val>7SJ82-DAAA-AA0-0AAAA0-AB0411-12111B-BAA000-000AB0-HB1BD4-JZ0</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>V07.80</Val>
+							</DAI>
+							<DAI name="serNum">
+								<Val>BM1910004301</Val>
+							</DAI>
+							<DAI name="model">
+								<Val>7SJ82</Val>
+							</DAI>
+							<DAI name="location">
+								<Val></Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501Application.LTIM0" lnClass="LTIM" inst="0">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="TmOfsTmm">
+							<DAI name="minVal">
+								<Val>-720</Val>
+							</DAI>
+							<DAI name="maxVal">
+								<Val>840</Val>
+							</DAI>
+							<DAI name="stepSize">
+								<Val>15</Val>
+							</DAI>
+							<DAI name="setVal" />
+						</DOI>
+						<DOI name="TmUseDT">
+							<DAI name="setVal" />
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501Application.LTRK0" lnClass="LTRK" inst="0">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501Application.RSLEDGAPC0" prefix="RSLED" lnClass="GAPC" inst="0">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+				</LDevice>
+				<LDevice inst="CB1">
+					<LN0 lnType="E04F501CB1.LLN0" lnClass="LLN0" inst="">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>05.07.80</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="ldNs">
+								<Val>IEC 61850-7-4:2003</Val>
+							</DAI>
+						</DOI>
+					</LN0>
+					<LN lnType="E04F501Application.RSLEDGAPC0" prefix="CBT_" lnClass="GAPC" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501CB1.CILO1" lnClass="CILO" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501CB1.CSWI1" lnClass="CSWI" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Pos">
+							<DAI name="ctlModel">
+								<Val>sbo-with-enhanced-security</Val>
+							</DAI>
+							<DAI name="sboTimeout">
+								<Val>30000</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501Application.RSLEDGAPC0" lnClass="GAPC" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501CB1.GAPC2" lnClass="GAPC" inst="2">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>direct-with-normal-security</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501CB1.PTRC1" lnClass="PTRC" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501Application.RSLEDGAPC0" prefix="RSLED" lnClass="GAPC" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501CB1.XCBR1" lnClass="XCBR" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Pos">
+							<SDI name="pulseConfig">
+								<DAI name="cmdQual">
+									<Val>pulse</Val>
+								</DAI>
+								<DAI name="onDur">
+									<Val>100</Val>
+								</DAI>
+								<DAI name="offDur">
+									<Val>0</Val>
+								</DAI>
+								<DAI name="numPls">
+									<Val>1</Val>
+								</DAI>
+							</SDI>
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="BlkOpn">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="BlkCls">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="SumSwARs">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val>A</Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<DAI name="pulsQty">
+								<Val>0.001</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+				</LDevice>
+				<LDevice inst="CB1_Fundamental">
+					<LN0 lnType="E04F501CB1.LLN0" lnClass="LLN0" inst="">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>05.07.80</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="ldNs">
+								<Val>IEC 61850-7-4:2003</Val>
+							</DAI>
+						</DOI>
+					</LN0>
+					<LN lnType="E04F501CB1_Fundamental.FPRE_MMXU1" prefix="FPRE_" lnClass="MMXU" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="PPV">
+							<SDI name="phsAB">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>V</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>k</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>2000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="phsBC">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>V</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>k</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>2000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="phsCA">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>V</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>k</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>2000</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="PhV">
+							<SDI name="phsA">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>V</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>k</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>2000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="phsB">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>V</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>k</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>2000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="phsC">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>V</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>k</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>2000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="res">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>V</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>k</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>20000</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="A">
+							<SDI name="phsA">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>A</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val></Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>10000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="phsB">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>A</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val></Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>10000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="phsC">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>A</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val></Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>10000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="res">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>A</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val></Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>100000</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+						</DOI>
+					</LN>
+				</LDevice>
+				<LDevice inst="Mod1_Channel1">
+					<LN0 lnType="E04F501CB1.LLN0" lnClass="LLN0" inst="">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>05.07.80</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val></Val>
+							</DAI>
+							<DAI name="ldNs">
+								<Val>IEC 61850-7-4:2003</Val>
+							</DAI>
+						</DOI>
+					</LN0>
+					<LN lnType="E04F501Mod1_Channel1.LCCH1" lnClass="LCCH" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.13.995</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val></Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+				</LDevice>
+				<LDevice inst="Mod2">
+					<LN0 lnType="E04F501CB1.LLN0" lnClass="LLN0" inst="">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>05.07.80</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="ldNs">
+								<Val>IEC 61850-7-4:2003</Val>
+							</DAI>
+						</DOI>
+					</LN0>
+				</LDevice>
+				<LDevice inst="Mod2_Channel1">
+					<LN0 lnType="E04F501CB1.LLN0" lnClass="LLN0" inst="">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>05.07.80</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="ldNs">
+								<Val>IEC 61850-7-4:2003</Val>
+							</DAI>
+						</DOI>
+					</LN0>
+					<LN lnType="E04F501Mod1_Channel1.LCCH1" lnClass="LCCH" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.16.995</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2024-03-14 03:40:44</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501Mod1_Channel1.LCCH1" lnClass="LCCH" inst="2">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.13.995</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2024-03-14 03:40:44</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501Mod2_Channel1.Line_LCCH1" prefix="Line_" lnClass="LCCH" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.13.995</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+				</LDevice>
+				<LDevice inst="PowS">
+					<LN0 lnType="E04F501CB1.LLN0" lnClass="LLN0" inst="">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>05.07.80</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="ldNs">
+								<Val>IEC 61850-7-4:2003</Val>
+							</DAI>
+						</DOI>
+					</LN0>
+					<LN lnType="E04F501Application.RSLEDGAPC0" lnClass="GAPC" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+				</LDevice>
+				<LDevice inst="PowS_MeasPointI3ph1">
+					<LN0 lnType="E04F501CB1.LLN0" lnClass="LLN0" inst="">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>05.07.80</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="ldNs">
+								<Val>IEC 61850-7-4:2003</Val>
+							</DAI>
+						</DOI>
+					</LN0>
+					<LN lnType="E04F501Application.RSLEDGAPC0" prefix="CT3P_" lnClass="GAPC" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501PowS_MeasPointI3ph1.TCTR1" lnClass="TCTR" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="ARtg">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val>A</Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>1.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>1.0e05</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.1</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="HzRtg">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val>Hz</Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>16.67</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>60.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.01</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="Cor">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val></Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>0.01</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>10.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.001</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="AngCor">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val>deg</Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>-90.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>90.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.01</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501PowS_MeasPointI3ph1.TCTR1" lnClass="TCTR" inst="2">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="ARtg">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val>A</Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>1.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>1.0e05</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.1</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="HzRtg">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val>Hz</Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>16.67</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>60.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.01</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="Cor">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val></Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>0.01</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>10.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.001</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="AngCor">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val>deg</Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>-90.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>90.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.01</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501PowS_MeasPointI3ph1.TCTR1" lnClass="TCTR" inst="3">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="ARtg">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val>A</Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>1.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>1.0e05</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.1</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="HzRtg">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val>Hz</Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>16.67</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>60.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.01</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="Cor">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val></Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>0.01</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>10.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.001</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="AngCor">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val>deg</Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>-90.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>90.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.01</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501PowS_MeasPointI3ph1.TCTR1" lnClass="TCTR" inst="4">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="ARtg">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val>A</Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>1.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>1.0e05</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.1</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="HzRtg">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val>Hz</Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>16.67</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>60.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.01</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="Cor">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val></Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>0.01</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>10.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.001</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="AngCor">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val>deg</Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>-90.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>90.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.01</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+				</LDevice>
+				<LDevice inst="PowS_MeasPointV3ph1">
+					<LN0 lnType="E04F501CB1.LLN0" lnClass="LLN0" inst="">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>05.07.80</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="ldNs">
+								<Val>IEC 61850-7-4:2003</Val>
+							</DAI>
+						</DOI>
+					</LN0>
+					<LN lnType="E04F501PowS_MeasPointV3ph1.TVTR1" lnClass="TVTR" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="VRtg">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val>V</Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val>k</Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>0.2</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>1200.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.01</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="HzRtg">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val>Hz</Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>16.67</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>60.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.01</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="Cor">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val></Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>0.01</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>10.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.001</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="AngCor">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val>deg</Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>-90.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>90.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.01</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501PowS_MeasPointV3ph1.TVTR1" lnClass="TVTR" inst="2">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="VRtg">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val>V</Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val>k</Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>0.2</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>1200.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.01</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="HzRtg">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val>Hz</Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>16.67</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>60.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.01</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="Cor">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val></Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>0.01</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>10.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.001</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="AngCor">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val>deg</Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>-90.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>90.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.01</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501PowS_MeasPointV3ph1.TVTR1" lnClass="TVTR" inst="3">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="VRtg">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val>V</Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val>k</Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>0.2</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>1200.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.01</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="HzRtg">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val>Hz</Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>16.67</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>60.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.01</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="Cor">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val></Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>0.01</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>10.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.001</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="AngCor">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val>deg</Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>-90.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>90.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.01</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501PowS_MeasPointV3ph1.TVTR1" lnClass="TVTR" inst="4">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="VRtg">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val>V</Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val>k</Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>0.2</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>1200.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.01</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="HzRtg">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val>Hz</Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>16.67</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>60.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.01</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="Cor">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val></Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>0.01</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>10.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.001</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="AngCor">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val>deg</Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<SDI name="minVal">
+								<DAI name="f">
+									<Val>-90.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="maxVal">
+								<DAI name="f">
+									<Val>90.0</Val>
+								</DAI>
+							</SDI>
+							<SDI name="stepSize">
+								<DAI name="f">
+									<Val>0.01</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501Application.RSLEDGAPC0" prefix="VT3P_" lnClass="GAPC" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+				</LDevice>
+				<LDevice inst="Rec">
+					<LN0 lnType="E04F501CB1.LLN0" lnClass="LLN0" inst="">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>05.07.80</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="ldNs">
+								<Val>IEC 61850-7-4:2003</Val>
+							</DAI>
+						</DOI>
+					</LN0>
+					<LN lnType="E04F501Application.RSLEDGAPC0" prefix="GFLG_" lnClass="GAPC" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501Application.RSLEDGAPC0" prefix="RCDG_" lnClass="GAPC" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+				</LDevice>
+				<LDevice inst="Rec_FaultRecorder">
+					<LN0 lnType="E04F501CB1.LLN0" lnClass="LLN0" inst="">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>05.07.80</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="ldNs">
+								<Val>IEC 61850-7-4:2003</Val>
+							</DAI>
+						</DOI>
+					</LN0>
+					<LN lnType="E04F501Rec_FaultRecorder.DEF_RDRE1" prefix="DEF_" lnClass="RDRE" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="RcdTrg">
+							<DAI name="ctlModel">
+								<Val>direct-with-normal-security</Val>
+							</DAI>
+						</DOI>
+						<DOI name="MemRs">
+							<DAI name="ctlModel">
+								<Val>direct-with-enhanced-security</Val>
+							</DAI>
+						</DOI>
+						<DOI name="MemClr">
+							<DAI name="ctlModel">
+								<Val>direct-with-enhanced-security</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501Application.RSLEDGAPC0" prefix="RCDR_" lnClass="GAPC" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+				</LDevice>
+				<LDevice inst="UD1">
+					<LN0 lnType="E04F501CB1.LLN0" lnClass="LLN0" inst="">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>05.07.80</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="ldNs">
+								<Val>IEC 61850-7-4:2003</Val>
+							</DAI>
+						</DOI>
+					</LN0>
+					<LN lnType="E04F501Application.RSLEDGAPC0" prefix="RSLED" lnClass="GAPC" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501UD1.USER1" lnClass="USER" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>direct-with-normal-security</Val>
+							</DAI>
+							<DAI name="dataNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Beh">
+							<DAI name="dataNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Health">
+							<DAI name="dataNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>Siprotec5/user-defined</Val>
+							</DAI>
+							<DAI name="dataNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+						<DOI name="SPS">
+							<DAI name="dataNs">
+								<Val>Siprotec5/user-defined</Val>
+							</DAI>
+						</DOI>
+						<DOI name="SPS1">
+							<DAI name="dataNs">
+								<Val>Siprotec5/user-defined</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501UD1.USER2" lnClass="USER" inst="2">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>direct-with-normal-security</Val>
+							</DAI>
+							<DAI name="dataNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Beh">
+							<DAI name="dataNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Health">
+							<DAI name="dataNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>Siprotec5/user-defined</Val>
+							</DAI>
+							<DAI name="dataNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+						<DOI name="SPS">
+							<DAI name="dataNs">
+								<Val>Siprotec5/user-defined</Val>
+							</DAI>
+						</DOI>
+					</LN>
+				</LDevice>
+				<LDevice inst="UD2">
+					<LN0 lnType="E04F501CB1.LLN0" lnClass="LLN0" inst="">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>05.07.80</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="ldNs">
+								<Val>IEC 61850-7-4:2003</Val>
+							</DAI>
+						</DOI>
+					</LN0>
+					<LN lnType="E04F501Application.RSLEDGAPC0" prefix="RSLED" lnClass="GAPC" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501UD2.USER1" lnClass="USER" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>direct-with-normal-security</Val>
+							</DAI>
+							<DAI name="dataNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Beh">
+							<DAI name="dataNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Health">
+							<DAI name="dataNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>Siprotec5/user-defined</Val>
+							</DAI>
+							<DAI name="dataNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+						<DOI name="DPS">
+							<DAI name="dataNs">
+								<Val>Siprotec5/user-defined</Val>
+							</DAI>
+						</DOI>
+					</LN>
+				</LDevice>
+				<LDevice inst="UD3">
+					<LN0 lnType="E04F501CB1.LLN0" lnClass="LLN0" inst="">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>05.07.80</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="ldNs">
+								<Val>IEC 61850-7-4:2003</Val>
+							</DAI>
+						</DOI>
+					</LN0>
+					<LN lnType="E04F501Application.RSLEDGAPC0" prefix="RSLED" lnClass="GAPC" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501UD1.USER2" lnClass="USER" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>direct-with-normal-security</Val>
+							</DAI>
+							<DAI name="dataNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Beh">
+							<DAI name="dataNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Health">
+							<DAI name="dataNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>Siprotec5/user-defined</Val>
+							</DAI>
+							<DAI name="dataNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+						<DOI name="SPS">
+							<DAI name="dataNs">
+								<Val>Siprotec5/user-defined</Val>
+							</DAI>
+						</DOI>
+					</LN>
+				</LDevice>
+				<LDevice inst="VI3p1">
+					<LN0 lnType="E04F501CB1.LLN0" lnClass="LLN0" inst="">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>05.07.80</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="ldNs">
+								<Val>IEC 61850-7-4:2003</Val>
+							</DAI>
+						</DOI>
+					</LN0>
+					<LN lnType="E04F501VI3p1.OCGIGAPC1" prefix="OCGI" lnClass="GAPC" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501VI3p1.PHAR1" lnClass="PHAR" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>direct-with-normal-security</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501VI3p1.PTRC1" lnClass="PTRC" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501Application.RSLEDGAPC0" prefix="RSLED" lnClass="GAPC" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501Application.RSLEDGAPC0" prefix="VI3P_" lnClass="GAPC" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="lnNs">
+								<Val>IEC 61850-7-4:2007</Val>
+							</DAI>
+						</DOI>
+					</LN>
+				</LDevice>
+				<LDevice inst="VI3p1_5051NOCgndB1">
+					<LN0 lnType="E04F501CB1.LLN0" lnClass="LLN0" inst="">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>05.07.80</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="ldNs">
+								<Val>IEC 61850-7-4:2003</Val>
+							</DAI>
+						</DOI>
+					</LN0>
+					<LN lnType="E04F501VI3p1_5051NOCgndB1.ND_PTOC1" prefix="ND_" lnClass="PTOC" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>direct-with-normal-security</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501VI3p1_5051NOCgndB1.ND_PTOC1" prefix="ND_" lnClass="PTOC" inst="2">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>direct-with-normal-security</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501VI3p1_5051NOCgndB1.ND_PTOC1" prefix="NI_" lnClass="PTOC" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>direct-with-normal-security</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501VI3p1_5051NOCgndB1.PTRC1" lnClass="PTRC" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+						</DOI>
+					</LN>
+				</LDevice>
+				<LDevice inst="VI3p1_5051OC3phase1">
+					<LN0 lnType="E04F501CB1.LLN0" lnClass="LLN0" inst="">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>05.07.80</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="ldNs">
+								<Val>IEC 61850-7-4:2003</Val>
+							</DAI>
+						</DOI>
+					</LN0>
+					<LN lnType="E04F501VI3p1_5051OC3phase1.ID_PTOC1" prefix="ID_" lnClass="PTOC" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>direct-with-normal-security</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501VI3p1_5051OC3phase1.ID_PTOC1" prefix="ID_" lnClass="PTOC" inst="2">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>direct-with-normal-security</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501VI3p1_5051OC3phase1.ID_PTOC1" prefix="II_" lnClass="PTOC" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>direct-with-normal-security</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501VI3p1_5051OC3phase1.PTRC1" lnClass="PTRC" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+						</DOI>
+					</LN>
+				</LDevice>
+				<LDevice inst="VI3p1_FundSymComp">
+					<LN0 lnType="E04F501CB1.LLN0" lnClass="LLN0" inst="">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>05.07.80</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="ldNs">
+								<Val>IEC 61850-7-4:2003</Val>
+							</DAI>
+						</DOI>
+					</LN0>
+					<LN lnType="E04F501VI3p1_FundSymComp.FPRE_MMXN1" prefix="FPRE_" lnClass="MMXN" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501CB1_Fundamental.FPRE_MMXU1" prefix="FPRE_" lnClass="MMXU" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="PPV">
+							<SDI name="phsAB">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>V</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>k</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>2000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="phsBC">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>V</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>k</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>2000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="phsCA">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>V</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>k</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>2000</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="PhV">
+							<SDI name="phsA">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>V</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>k</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>2000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="phsB">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>V</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>k</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>2000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="phsC">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>V</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>k</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>2000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="res">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>V</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>k</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>20000</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="A">
+							<SDI name="phsA">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>A</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val></Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>10000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="phsB">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>A</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val></Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>10000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="phsC">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>A</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val></Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>10000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="res">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>A</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val></Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>100000</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501VI3p1_FundSymComp.XPRE_MSQI1" prefix="XPRE_" lnClass="MSQI" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="SeqA">
+							<SDI name="c1">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>A</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val></Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>10000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="c2">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>A</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val></Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>10000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="c3">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>A</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val></Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>10000</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="SeqV">
+							<SDI name="c1">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>V</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>k</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>2000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="c2">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>V</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>k</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>2000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="c3">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>V</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>k</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>2000</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+						</DOI>
+					</LN>
+				</LDevice>
+				<LDevice inst="VI3p1_OperationalValues">
+					<LN0 lnType="E04F501CB1.LLN0" lnClass="LLN0" inst="">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>05.07.80</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="ldNs">
+								<Val>IEC 61850-7-4:2003</Val>
+							</DAI>
+						</DOI>
+					</LN0>
+					<LN lnType="E04F501VI3p1_OperationalValues.PPRE_MMXU1" prefix="PPRE_" lnClass="MMXU" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="TotW">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val>W</Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val>M</Val>
+								</DAI>
+							</SDI>
+							<DAI name="db">
+								<Val>10000</Val>
+							</DAI>
+						</DOI>
+						<DOI name="TotVAr">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val>VAr</Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val>M</Val>
+								</DAI>
+							</SDI>
+							<DAI name="db">
+								<Val>10000</Val>
+							</DAI>
+						</DOI>
+						<DOI name="TotVA">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val>VA</Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val>M</Val>
+								</DAI>
+							</SDI>
+							<DAI name="db">
+								<Val>10000</Val>
+							</DAI>
+						</DOI>
+						<DOI name="TotPF">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val></Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<DAI name="db">
+								<Val>10000</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Hz">
+							<SDI name="units">
+								<DAI name="SIUnit">
+									<Val>Hz</Val>
+								</DAI>
+								<DAI name="multiplier">
+									<Val></Val>
+								</DAI>
+							</SDI>
+							<DAI name="db">
+								<Val>100</Val>
+							</DAI>
+						</DOI>
+						<DOI name="W">
+							<SDI name="phsA">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>W</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>M</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>10000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="phsB">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>W</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>M</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>10000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="phsC">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>W</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>M</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>10000</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="VAr">
+							<SDI name="phsA">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>VAr</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>M</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>10000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="phsB">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>VAr</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>M</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>10000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="phsC">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>VAr</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>M</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>10000</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="VA">
+							<SDI name="phsA">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>VA</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>M</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>10000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="phsB">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>VA</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>M</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>10000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="phsC">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>VA</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>M</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>10000</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501VI3p1_FundSymComp.FPRE_MMXN1" prefix="RPRE_" lnClass="MMXN" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN lnType="E04F501VI3p1_OperationalValues.RPRE_MMXU1" prefix="RPRE_" lnClass="MMXU" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="PPV">
+							<SDI name="phsAB">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>V</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>k</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>2000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="phsBC">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>V</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>k</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>2000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="phsCA">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>V</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>k</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>2000</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="PhV">
+							<SDI name="phsA">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>V</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>k</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>2000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="phsB">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>V</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>k</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>2000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="phsC">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>V</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>k</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>2000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="res">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>V</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val>k</Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>20000</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="A">
+							<SDI name="phsA">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>A</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val></Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>10000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="phsB">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>A</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val></Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>10000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="phsC">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>A</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val></Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>10000</Val>
+								</DAI>
+							</SDI>
+							<SDI name="res">
+								<SDI name="units">
+									<DAI name="SIUnit">
+										<Val>A</Val>
+									</DAI>
+									<DAI name="multiplier">
+										<Val></Val>
+									</DAI>
+								</SDI>
+								<DAI name="db">
+									<Val>100000</Val>
+								</DAI>
+							</SDI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+						</DOI>
+					</LN>
+				</LDevice>
+				<LDevice inst="VI3p1_ProcessMonitor">
+					<LN0 lnType="E04F501CB1.LLN0" lnClass="LLN0" inst="">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>05.07.80</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="ldNs">
+								<Val>IEC 61850-7-4:2003</Val>
+							</DAI>
+						</DOI>
+					</LN0>
+				</LDevice>
+				<LDevice inst="VI3p1_SwitchOntoFault">
+					<LN0 lnType="E04F501CB1.LLN0" lnClass="LLN0" inst="">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>05.07.80</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+							<DAI name="ldNs">
+								<Val>IEC 61850-7-4:2003</Val>
+							</DAI>
+						</DOI>
+					</LN0>
+					<LN lnType="E04F501VI3p1_5051NOCgndB1.PTRC1" lnClass="PTRC" inst="1">
+						<DOI name="Mod">
+							<DAI name="ctlModel">
+								<Val>status-only</Val>
+							</DAI>
+						</DOI>
+						<DOI name="NamPlt">
+							<DAI name="vendor">
+								<Val>SIEMENS</Val>
+							</DAI>
+							<DAI name="swRev">
+								<Val>07.80.00</Val>
+							</DAI>
+							<DAI name="d">
+								<Val></Val>
+							</DAI>
+							<DAI name="configRev">
+								<Val>2020-08-18 06:51:45</Val>
+							</DAI>
+						</DOI>
+					</LN>
+				</LDevice>
+			</Server>
+		</AccessPoint>
+	</IED>
+	<DataTypeTemplates>
+		<LNodeType id="E04F501UD1.USER1" lnClass="USER">
+			<DO name="Mod" type="E04F501UD1.USER1.Mod" />
+			<DO name="Beh" type="E04F501UD1.USER1.Beh" />
+			<DO name="Health" type="E04F501UD1.USER1.Beh" />
+			<DO name="NamPlt" type="E04F501UD1.USER1.NamPlt" />
+			<DO name="SPS" type="E04F501Application.LPHD0.PrcModIna" />
+			<DO name="SPS1" type="E04F501Application.LPHD0.PrcModIna" />
+		</LNodeType>
+		<LNodeType id="E04F501UD1.USER2" lnClass="USER">
+			<DO name="Mod" type="E04F501UD1.USER1.Mod" />
+			<DO name="Beh" type="E04F501UD1.USER1.Beh" />
+			<DO name="Health" type="E04F501UD1.USER1.Beh" />
+			<DO name="NamPlt" type="E04F501UD1.USER1.NamPlt" />
+			<DO name="SPS" type="E04F501Application.LPHD0.PrcModIna" />
+		</LNodeType>
+		<LNodeType id="E04F501UD2.USER1" lnClass="USER">
+			<DO name="Mod" type="E04F501UD1.USER1.Mod" />
+			<DO name="Beh" type="E04F501UD1.USER1.Beh" />
+			<DO name="Health" type="E04F501UD1.USER1.Beh" />
+			<DO name="NamPlt" type="E04F501UD1.USER1.NamPlt" />
+			<DO name="DPS" type="E04F501UD2.USER1.DPS" />
+		</LNodeType>
+		<LNodeType id="E04F501VI3p1.OCGIGAPC1" lnClass="GAPC">
+			<DO name="Mod" type="E04F501Application.CALH0.Mod" />
+			<DO name="Beh" type="E04F501Application.LLN0.Beh" />
+			<DO name="Health" type="E04F501Application.LLN0.Health" />
+			<DO name="Str" type="E04F501CB1.PTRC1.Str" />
+			<DO name="Op" type="E04F501VI3p1.OCGIGAPC1.Op" />
+			<DO name="NamPlt" type="E04F501Application.CALH0.NamPlt" />
+		</LNodeType>
+		<LNodeType id="E04F501Application.LLN0" lnClass="LLN0">
+			<DO name="Mod" type="E04F501Application.LLN0.Mod" />
+			<DO name="Beh" type="E04F501Application.LLN0.Beh" />
+			<DO name="Health" type="E04F501Application.LLN0.Health" />
+			<DO name="LEDRs" type="E04F501Application.LLN0.LEDRs" />
+			<DO name="NamPlt" type="E04F501Application.LLN0.NamPlt" />
+			<DO name="LocKey" type="E04F501Application.LLN0.LocKey" />
+			<DO name="LocSta" type="E04F501Application.LLN0.LocSta" />
+		</LNodeType>
+		<LNodeType id="E04F501CB1.LLN0" lnClass="LLN0">
+			<DO name="Mod" type="E04F501Application.CALH0.Mod" />
+			<DO name="Beh" type="E04F501Application.LLN0.Beh" />
+			<DO name="Health" type="E04F501Application.LLN0.Health" />
+			<DO name="NamPlt" type="E04F501Application.LLN0.NamPlt" />
+		</LNodeType>
+		<LNodeType id="E04F501Application.LPHD0" lnClass="LPHD">
+			<DO name="PhyHealth" type="E04F501Application.LLN0.Health" />
+			<DO name="Proxy" type="E04F501Application.CALH0.GrAlm" />
+			<DO name="PwrUp" type="E04F501Application.CALH0.GrAlm" />
+			<DO name="PrcModIna" type="E04F501Application.LPHD0.PrcModIna" />
+			<DO name="PhyNam" type="E04F501Application.LPHD0.PhyNam" />
+		</LNodeType>
+		<LNodeType id="E04F501VI3p1_FundSymComp.FPRE_MMXN1" lnClass="MMXN">
+			<DO name="Mod" type="E04F501Application.CALH0.Mod" />
+			<DO name="Beh" type="E04F501Application.LLN0.Beh" />
+			<DO name="Health" type="E04F501Application.LLN0.Health" />
+			<DO name="NamPlt" type="E04F501Application.CALH0.NamPlt" />
+		</LNodeType>
+		<LNodeType id="E04F501CB1_Fundamental.FPRE_MMXU1" lnClass="MMXU">
+			<DO name="Mod" type="E04F501Application.CALH0.Mod" />
+			<DO name="Beh" type="E04F501Application.LLN0.Beh" />
+			<DO name="PPV" type="E04F501CB1_Fundamental.FPRE_MMXU1.PPV" />
+			<DO name="PhV" type="E04F501CB1_Fundamental.FPRE_MMXU1.PhV" />
+			<DO name="A" type="E04F501CB1_Fundamental.FPRE_MMXU1.PhV" />
+			<DO name="Health" type="E04F501Application.LLN0.Health" />
+			<DO name="NamPlt" type="E04F501Application.CALH0.NamPlt" />
+		</LNodeType>
+		<LNodeType id="E04F501VI3p1_OperationalValues.PPRE_MMXU1" lnClass="MMXU">
+			<DO name="Mod" type="E04F501Application.CALH0.Mod" />
+			<DO name="Beh" type="E04F501Application.LLN0.Beh" />
+			<DO name="TotW" type="E04F501VI3p1_OperationalValues.PPRE_MMXU1.TotW" />
+			<DO name="TotVAr" type="E04F501VI3p1_OperationalValues.PPRE_MMXU1.TotW" />
+			<DO name="TotVA" type="E04F501VI3p1_OperationalValues.PPRE_MMXU1.TotW" />
+			<DO name="TotPF" type="E04F501VI3p1_OperationalValues.PPRE_MMXU1.TotW" />
+			<DO name="Hz" type="E04F501VI3p1_OperationalValues.PPRE_MMXU1.TotW" />
+			<DO name="W" type="E04F501VI3p1_OperationalValues.PPRE_MMXU1.W" />
+			<DO name="VAr" type="E04F501VI3p1_OperationalValues.PPRE_MMXU1.W" />
+			<DO name="VA" type="E04F501VI3p1_OperationalValues.PPRE_MMXU1.W" />
+			<DO name="Health" type="E04F501Application.LLN0.Health" />
+			<DO name="NamPlt" type="E04F501Application.CALH0.NamPlt" />
+		</LNodeType>
+		<LNodeType id="E04F501VI3p1_OperationalValues.RPRE_MMXU1" lnClass="MMXU">
+			<DO name="Mod" type="E04F501Application.CALH0.Mod" />
+			<DO name="Beh" type="E04F501Application.LLN0.Beh" />
+			<DO name="PPV" type="E04F501VI3p1_OperationalValues.RPRE_MMXU1.PPV" />
+			<DO name="PhV" type="E04F501VI3p1_OperationalValues.RPRE_MMXU1.PhV" />
+			<DO name="A" type="E04F501VI3p1_OperationalValues.RPRE_MMXU1.PhV" />
+			<DO name="Health" type="E04F501Application.LLN0.Health" />
+			<DO name="NamPlt" type="E04F501Application.CALH0.NamPlt" />
+		</LNodeType>
+		<LNodeType id="E04F501VI3p1_FundSymComp.XPRE_MSQI1" lnClass="MSQI">
+			<DO name="Mod" type="E04F501Application.CALH0.Mod" />
+			<DO name="Beh" type="E04F501Application.LLN0.Beh" />
+			<DO name="SeqA" type="E04F501VI3p1_FundSymComp.XPRE_MSQI1.SeqA" />
+			<DO name="SeqV" type="E04F501VI3p1_FundSymComp.XPRE_MSQI1.SeqA" />
+			<DO name="Health" type="E04F501Application.LLN0.Health" />
+			<DO name="NamPlt" type="E04F501Application.CALH0.NamPlt" />
+		</LNodeType>
+		<LNodeType id="E04F501VI3p1.PHAR1" lnClass="PHAR">
+			<DO name="Mod" type="E04F501Application.LLN0.Mod" />
+			<DO name="Beh" type="E04F501Application.LLN0.Beh" />
+			<DO name="Health" type="E04F501Application.LLN0.Health" />
+			<DO name="Str" type="E04F501CB1.PTRC1.Str" />
+			<DO name="NamPlt" type="E04F501Application.CALH0.NamPlt" />
+		</LNodeType>
+		<LNodeType id="E04F501VI3p1_5051NOCgndB1.ND_PTOC1" lnClass="PTOC">
+			<DO name="Mod" type="E04F501Application.LLN0.Mod" />
+			<DO name="Beh" type="E04F501Application.LLN0.Beh" />
+			<DO name="Health" type="E04F501Application.LLN0.Health" />
+			<DO name="Str" type="E04F501VI3p1_5051NOCgndB1.ND_PTOC1.Str" />
+			<DO name="Op" type="E04F501CB1.PTRC1.Tr" />
+			<DO name="NamPlt" type="E04F501Application.CALH0.NamPlt" />
+		</LNodeType>
+		<LNodeType id="E04F501VI3p1_5051OC3phase1.ID_PTOC1" lnClass="PTOC">
+			<DO name="Mod" type="E04F501Application.LLN0.Mod" />
+			<DO name="Beh" type="E04F501Application.LLN0.Beh" />
+			<DO name="Health" type="E04F501Application.LLN0.Health" />
+			<DO name="Str" type="E04F501VI3p1_5051OC3phase1.ID_PTOC1.Str" />
+			<DO name="Op" type="E04F501CB1.PTRC1.Tr" />
+			<DO name="NamPlt" type="E04F501Application.CALH0.NamPlt" />
+		</LNodeType>
+		<LNodeType id="E04F501CB1.PTRC1" lnClass="PTRC">
+			<DO name="Mod" type="E04F501Application.CALH0.Mod" />
+			<DO name="Beh" type="E04F501Application.LLN0.Beh" />
+			<DO name="Health" type="E04F501Application.LLN0.Health" />
+			<DO name="Tr" type="E04F501CB1.PTRC1.Tr" />
+			<DO name="Op" type="E04F501CB1.PTRC1.Tr" />
+			<DO name="Str" type="E04F501CB1.PTRC1.Str" />
+			<DO name="NamPlt" type="E04F501Application.CALH0.NamPlt" />
+		</LNodeType>
+		<LNodeType id="E04F501VI3p1.PTRC1" lnClass="PTRC">
+			<DO name="Mod" type="E04F501Application.CALH0.Mod" />
+			<DO name="Beh" type="E04F501Application.LLN0.Beh" />
+			<DO name="Health" type="E04F501Application.LLN0.Health" />
+			<DO name="Op" type="E04F501VI3p1.PTRC1.Op" />
+			<DO name="Str" type="E04F501CB1.PTRC1.Str" />
+			<DO name="NamPlt" type="E04F501Application.CALH0.NamPlt" />
+		</LNodeType>
+		<LNodeType id="E04F501VI3p1_5051NOCgndB1.PTRC1" lnClass="PTRC">
+			<DO name="Mod" type="E04F501Application.CALH0.Mod" />
+			<DO name="Beh" type="E04F501Application.LLN0.Beh" />
+			<DO name="Health" type="E04F501Application.LLN0.Health" />
+			<DO name="Op" type="E04F501CB1.PTRC1.Tr" />
+			<DO name="Str" type="E04F501VI3p1_5051NOCgndB1.ND_PTOC1.Str" />
+			<DO name="NamPlt" type="E04F501Application.CALH0.NamPlt" />
+		</LNodeType>
+		<LNodeType id="E04F501VI3p1_5051OC3phase1.PTRC1" lnClass="PTRC">
+			<DO name="Mod" type="E04F501Application.CALH0.Mod" />
+			<DO name="Beh" type="E04F501Application.LLN0.Beh" />
+			<DO name="Health" type="E04F501Application.LLN0.Health" />
+			<DO name="Op" type="E04F501CB1.PTRC1.Tr" />
+			<DO name="Str" type="E04F501VI3p1_5051OC3phase1.ID_PTOC1.Str" />
+			<DO name="NamPlt" type="E04F501Application.CALH0.NamPlt" />
+		</LNodeType>
+		<LNodeType id="E04F501Rec_FaultRecorder.DEF_RDRE1" lnClass="RDRE">
+			<DO name="Mod" type="E04F501Application.CALH0.Mod" />
+			<DO name="Beh" type="E04F501Application.LLN0.Beh" />
+			<DO name="Health" type="E04F501Application.LLN0.Health" />
+			<DO name="RcdTrg" type="E04F501Application.LLN0.LEDRs" />
+			<DO name="MemRs" type="E04F501Application.LLN0.LEDRs" />
+			<DO name="MemClr" type="E04F501Application.LLN0.LEDRs" />
+			<DO name="RcdMade" type="E04F501Application.CALH0.GrAlm" />
+			<DO name="FltNum" type="E04F501Rec_FaultRecorder.DEF_RDRE1.FltNum" />
+			<DO name="RcdStr" type="E04F501Application.CALH0.GrAlm" />
+			<DO name="NamPlt" type="E04F501Application.CALH0.NamPlt" />
+		</LNodeType>
+		<LNodeType id="E04F501Application.CALH0" lnClass="CALH">
+			<DO name="Mod" type="E04F501Application.CALH0.Mod" />
+			<DO name="Beh" type="E04F501Application.LLN0.Beh" />
+			<DO name="Health" type="E04F501Application.LLN0.Health" />
+			<DO name="GrAlm" type="E04F501Application.CALH0.GrAlm" />
+			<DO name="GrWrn" type="E04F501Application.CALH0.GrAlm" />
+			<DO name="NamPlt" type="E04F501Application.CALH0.NamPlt" />
+		</LNodeType>
+		<LNodeType id="E04F501CB1.CILO1" lnClass="CILO">
+			<DO name="Mod" type="E04F501Application.CALH0.Mod" />
+			<DO name="Beh" type="E04F501Application.LLN0.Beh" />
+			<DO name="Health" type="E04F501Application.LLN0.Health" />
+			<DO name="EnaOpn" type="E04F501Application.CALH0.GrAlm" />
+			<DO name="EnaCls" type="E04F501Application.CALH0.GrAlm" />
+			<DO name="NamPlt" type="E04F501Application.CALH0.NamPlt" />
+		</LNodeType>
+		<LNodeType id="E04F501CB1.CSWI1" lnClass="CSWI">
+			<DO name="Mod" type="E04F501Application.CALH0.Mod" />
+			<DO name="Beh" type="E04F501Application.LLN0.Beh" />
+			<DO name="Health" type="E04F501Application.LLN0.Health" />
+			<DO name="Loc" type="E04F501Application.CALH0.GrAlm" />
+			<DO name="Pos" type="E04F501CB1.CSWI1.Pos" />
+			<DO name="NamPlt" type="E04F501Application.CALH0.NamPlt" />
+		</LNodeType>
+		<LNodeType id="E04F501Application.RSLEDGAPC0" lnClass="GAPC">
+			<DO name="Mod" type="E04F501Application.LTIM0.Mod" />
+			<DO name="Beh" type="E04F501Application.LTIM0.Beh" />
+			<DO name="Health" type="E04F501Application.LTIM0.Health" />
+			<DO name="NamPlt" type="E04F501Application.LTIM0.NamPlt" />
+		</LNodeType>
+		<LNodeType id="E04F501CB1.GAPC2" lnClass="GAPC">
+			<DO name="Mod" type="E04F501CB1.GAPC2.Mod" />
+			<DO name="Beh" type="E04F501Application.LTIM0.Beh" />
+			<DO name="Health" type="E04F501Application.LTIM0.Health" />
+			<DO name="Blk" type="E04F501CB1.GAPC2.Blk" />
+			<DO name="NamPlt" type="E04F501Application.LTIM0.NamPlt" />
+		</LNodeType>
+		<LNodeType id="E04F501Mod1_Channel1.LCCH1" lnClass="LCCH">
+			<DO name="Mod" type="E04F501Application.LTIM0.Mod" />
+			<DO name="Beh" type="E04F501Application.LTIM0.Beh" />
+			<DO name="Health" type="E04F501Application.LTIM0.Health" />
+			<DO name="ChLiv" type="E04F501Application.LTIM0.TmDT" />
+			<DO name="NamPlt" type="E04F501Application.LTIM0.NamPlt" />
+		</LNodeType>
+		<LNodeType id="E04F501Mod2_Channel1.Line_LCCH1" lnClass="LCCH">
+			<DO name="Mod" type="E04F501Application.LTIM0.Mod" />
+			<DO name="Beh" type="E04F501Application.LTIM0.Beh" />
+			<DO name="Health" type="E04F501Application.LTIM0.Health" />
+			<DO name="ChLiv" type="E04F501Application.LTIM0.TmDT" />
+			<DO name="RedChLiv" type="E04F501Application.LTIM0.TmDT" />
+			<DO name="NamPlt" type="E04F501Application.LTIM0.NamPlt" />
+		</LNodeType>
+		<LNodeType id="E04F501Application.LTIM0" lnClass="LTIM">
+			<DO name="Mod" type="E04F501Application.LTIM0.Mod" />
+			<DO name="Beh" type="E04F501Application.LTIM0.Beh" />
+			<DO name="Health" type="E04F501Application.LTIM0.Health" />
+			<DO name="TmDT" type="E04F501Application.LTIM0.TmDT" />
+			<DO name="TmOfsTmm" type="E04F501Application.LTIM0.TmOfsTmm" />
+			<DO name="TmUseDT" type="E04F501Application.LTIM0.TmUseDT" />
+			<DO name="NamPlt" type="E04F501Application.LTIM0.NamPlt" />
+		</LNodeType>
+		<LNodeType id="E04F501Application.LTRK0" lnClass="LTRK">
+			<DO name="Mod" type="E04F501Application.LTIM0.Mod" />
+			<DO name="Beh" type="E04F501Application.LTIM0.Beh" />
+			<DO name="Health" type="E04F501Application.LTIM0.Health" />
+			<DO name="NamPlt" type="E04F501Application.LTIM0.NamPlt" />
+		</LNodeType>
+		<LNodeType id="E04F501PowS_MeasPointI3ph1.TCTR1" lnClass="TCTR">
+			<DO name="Mod" type="E04F501Application.LTIM0.Mod" />
+			<DO name="Beh" type="E04F501Application.LTIM0.Beh" />
+			<DO name="Health" type="E04F501Application.LTIM0.Health" />
+			<DO name="ARtg" type="E04F501PowS_MeasPointI3ph1.TCTR1.ARtg" />
+			<DO name="HzRtg" type="E04F501PowS_MeasPointI3ph1.TCTR1.ARtg" />
+			<DO name="Cor" type="E04F501PowS_MeasPointI3ph1.TCTR1.ARtg" />
+			<DO name="AngCor" type="E04F501PowS_MeasPointI3ph1.TCTR1.ARtg" />
+			<DO name="NamPlt" type="E04F501Application.LTIM0.NamPlt" />
+		</LNodeType>
+		<LNodeType id="E04F501PowS_MeasPointV3ph1.TVTR1" lnClass="TVTR">
+			<DO name="Mod" type="E04F501Application.LTIM0.Mod" />
+			<DO name="Beh" type="E04F501Application.LTIM0.Beh" />
+			<DO name="Health" type="E04F501Application.LTIM0.Health" />
+			<DO name="VRtg" type="E04F501PowS_MeasPointI3ph1.TCTR1.ARtg" />
+			<DO name="HzRtg" type="E04F501PowS_MeasPointI3ph1.TCTR1.ARtg" />
+			<DO name="Cor" type="E04F501PowS_MeasPointI3ph1.TCTR1.ARtg" />
+			<DO name="AngCor" type="E04F501PowS_MeasPointI3ph1.TCTR1.ARtg" />
+			<DO name="NamPlt" type="E04F501Application.LTIM0.NamPlt" />
+		</LNodeType>
+		<LNodeType id="E04F501CB1.XCBR1" lnClass="XCBR">
+			<DO name="Mod" type="E04F501Application.LTIM0.Mod" />
+			<DO name="Beh" type="E04F501Application.LTIM0.Beh" />
+			<DO name="Health" type="E04F501Application.LTIM0.Health" />
+			<DO name="Loc" type="E04F501Application.LTIM0.TmDT" />
+			<DO name="EEHealth" type="E04F501Application.LTIM0.Health" />
+			<DO name="OpCnt" type="E04F501CB1.XCBR1.OpCnt" />
+			<DO name="Pos" type="E04F501CB1.XCBR1.Pos" />
+			<DO name="BlkOpn" type="E04F501CB1.XCBR1.BlkOpn" />
+			<DO name="BlkCls" type="E04F501CB1.XCBR1.BlkOpn" />
+			<DO name="SumSwARs" type="E04F501CB1.XCBR1.SumSwARs" />
+			<DO name="NamPlt" type="E04F501Application.LTIM0.NamPlt" />
+		</LNodeType>
+		<DOType id="E04F501CB1.PTRC1.Str" cdc="ACD">
+			<DA name="general" fc="ST" bType="BOOLEAN" />
+			<DA name="dirGeneral" fc="ST" bType="Enum" type="dir" />
+			<DA name="phsA" fc="ST" bType="BOOLEAN" />
+			<DA name="dirPhsA" fc="ST" bType="Enum" type="dir" />
+			<DA name="phsB" fc="ST" bType="BOOLEAN" />
+			<DA name="dirPhsB" fc="ST" bType="Enum" type="dir" />
+			<DA name="phsC" fc="ST" bType="BOOLEAN" />
+			<DA name="dirPhsC" fc="ST" bType="Enum" type="dir" />
+			<DA name="neut" fc="ST" bType="BOOLEAN" />
+			<DA name="dirNeut" fc="ST" bType="Enum" type="dir" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+		</DOType>
+		<DOType id="E04F501VI3p1_5051NOCgndB1.ND_PTOC1.Str" cdc="ACD">
+			<DA name="general" fc="ST" bType="BOOLEAN" />
+			<DA name="dirGeneral" fc="ST" bType="Enum" type="dir" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+		</DOType>
+		<DOType id="E04F501VI3p1_5051OC3phase1.ID_PTOC1.Str" cdc="ACD">
+			<DA name="general" fc="ST" bType="BOOLEAN" />
+			<DA name="dirGeneral" fc="ST" bType="Enum" type="dir" />
+			<DA name="phsA" fc="ST" bType="BOOLEAN" />
+			<DA name="dirPhsA" fc="ST" bType="Enum" type="dir" />
+			<DA name="phsB" fc="ST" bType="BOOLEAN" />
+			<DA name="dirPhsB" fc="ST" bType="Enum" type="dir" />
+			<DA name="phsC" fc="ST" bType="BOOLEAN" />
+			<DA name="dirPhsC" fc="ST" bType="Enum" type="dir" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+		</DOType>
+		<DOType id="E04F501CB1.PTRC1.Tr" cdc="ACT">
+			<DA name="general" fc="ST" bType="BOOLEAN" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+		</DOType>
+		<DOType id="E04F501VI3p1.OCGIGAPC1.Op" cdc="ACT">
+			<DA name="general" fc="ST" bType="BOOLEAN" />
+			<DA name="phsA" fc="ST" bType="BOOLEAN" />
+			<DA name="phsB" fc="ST" bType="BOOLEAN" />
+			<DA name="phsC" fc="ST" bType="BOOLEAN" />
+			<DA name="neut" fc="ST" bType="BOOLEAN" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+		</DOType>
+		<DOType id="E04F501VI3p1.PTRC1.Op" cdc="ACT">
+			<DA name="general" fc="ST" bType="BOOLEAN" />
+			<DA name="phsA" fc="ST" bType="BOOLEAN" />
+			<DA name="phsB" fc="ST" bType="BOOLEAN" />
+			<DA name="phsC" fc="ST" bType="BOOLEAN" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+		</DOType>
+		<DOType id="E04F501CB1_Fundamental.FPRE_MMXU1.PPV.phsAB" cdc="CMV">
+			<DA name="instCVal" fc="MX" bType="Struct" type="E04F501CB1_Fundamental.FPRE_MMXU1.PPV.phsAB.instCVal" />
+			<DA name="cVal" fc="MX" bType="Struct" type="E04F501CB1_Fundamental.FPRE_MMXU1.PPV.phsAB.instCVal" />
+			<DA name="q" fc="MX" bType="Quality" />
+			<DA name="t" fc="MX" bType="Timestamp" />
+			<DA name="units" fc="CF" bType="Struct" type="E04F501CB1_Fundamental.FPRE_MMXU1.PPV.phsAB.units" />
+			<DA name="db" fc="CF" bType="INT32U" />
+		</DOType>
+		<DOType id="E04F501VI3p1_OperationalValues.PPRE_MMXU1.W.phsA" cdc="CMV">
+			<DA name="instCVal" fc="MX" bType="Struct" type="E04F501VI3p1_OperationalValues.PPRE_MMXU1.W.phsA.instCVal" />
+			<DA name="cVal" fc="MX" bType="Struct" type="E04F501VI3p1_OperationalValues.PPRE_MMXU1.W.phsA.instCVal" />
+			<DA name="q" fc="MX" bType="Quality" />
+			<DA name="t" fc="MX" bType="Timestamp" />
+			<DA name="units" fc="CF" bType="Struct" type="E04F501CB1_Fundamental.FPRE_MMXU1.PPV.phsAB.units" />
+			<DA name="db" fc="CF" bType="INT32U" />
+		</DOType>
+		<DOType id="E04F501CB1_Fundamental.FPRE_MMXU1.PPV" cdc="DEL">
+			<SDO name="phsAB" type="E04F501CB1_Fundamental.FPRE_MMXU1.PPV.phsAB" />
+			<SDO name="phsBC" type="E04F501CB1_Fundamental.FPRE_MMXU1.PPV.phsAB" />
+			<SDO name="phsCA" type="E04F501CB1_Fundamental.FPRE_MMXU1.PPV.phsAB" />
+		</DOType>
+		<DOType id="E04F501VI3p1_OperationalValues.RPRE_MMXU1.PPV" cdc="DEL">
+			<SDO name="phsAB" type="E04F501VI3p1_OperationalValues.PPRE_MMXU1.W.phsA" />
+			<SDO name="phsBC" type="E04F501VI3p1_OperationalValues.PPRE_MMXU1.W.phsA" />
+			<SDO name="phsCA" type="E04F501VI3p1_OperationalValues.PPRE_MMXU1.W.phsA" />
+		</DOType>
+		<DOType id="E04F501CB1.CSWI1.Pos" cdc="DPC">
+			<DA name="origin" fc="ST" bType="Struct" type="E04F501Application.LLN0.Mod.origin" />
+			<DA name="ctlNum" fc="ST" bType="INT8U" />
+			<DA name="stVal" fc="ST" bType="Dbpos" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+			<DA name="stSeld" fc="ST" bType="BOOLEAN" />
+			<DA name="SBO" fc="CO" bType="VisString129" />
+			<DA name="SBOw" fc="CO" bType="Struct" type="E04F501Application.LLN0.LEDRs.Oper" />
+			<DA name="Oper" fc="CO" bType="Struct" type="E04F501Application.LLN0.LEDRs.Oper" />
+			<DA name="Cancel" fc="CO" bType="Struct" type="E04F501CB1.CSWI1.Pos.Cancel" />
+			<DA name="ctlModel" fc="CF" bType="Enum" type="ctlModel" />
+			<DA name="sboTimeout" fc="CF" bType="INT32U" />
+		</DOType>
+		<DOType id="E04F501Application.LPHD0.PhyNam" cdc="DPL">
+			<DA name="vendor" fc="DC" bType="VisString255" />
+			<DA name="hwRev" fc="DC" bType="VisString255" />
+			<DA name="swRev" fc="DC" bType="VisString255" />
+			<DA name="serNum" fc="DC" bType="VisString255" />
+			<DA name="model" fc="DC" bType="VisString255" />
+			<DA name="location" fc="DC" bType="VisString255" />
+		</DOType>
+		<DOType id="E04F501UD2.USER1.DPS" cdc="DPS">
+			<DA name="stVal" fc="ST" bType="Dbpos" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+			<DA name="subEna" fc="SV" bType="BOOLEAN" />
+			<DA name="subVal" fc="SV" bType="Dbpos" />
+			<DA name="subQ" fc="SV" bType="Quality" />
+			<DA name="subID" fc="SV" bType="VisString64" />
+			<DA name="dataNs" fc="EX" bType="VisString255" />
+		</DOType>
+		<DOType id="E04F501Application.LLN0.Mod" cdc="INC">
+			<DA name="origin" fc="ST" bType="Struct" type="E04F501Application.LLN0.Mod.origin" />
+			<DA name="ctlNum" fc="ST" bType="INT8U" />
+			<DA name="stVal" fc="ST" bType="Enum" type="Mod" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+			<DA name="Oper" fc="CO" bType="Struct" type="E04F501Application.LLN0.Mod.Oper" />
+			<DA name="ctlModel" fc="CF" bType="Enum" type="ctlModel" />
+		</DOType>
+		<DOType id="E04F501Application.CALH0.Mod" cdc="INC">
+			<DA name="stVal" fc="ST" bType="Enum" type="Mod" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+			<DA name="ctlModel" fc="CF" bType="Enum" type="ctlModel" />
+		</DOType>
+		<DOType id="E04F501Application.LLN0.Beh" cdc="INS">
+			<DA name="stVal" fc="ST" bType="Enum" type="Beh" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+		</DOType>
+		<DOType id="E04F501Application.LLN0.Health" cdc="INS">
+			<DA name="stVal" fc="ST" bType="Enum" type="Health" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+		</DOType>
+		<DOType id="E04F501Rec_FaultRecorder.DEF_RDRE1.FltNum" cdc="INS">
+			<DA name="stVal" fc="ST" bType="INT32" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+		</DOType>
+		<DOType id="E04F501Application.LLN0.NamPlt" cdc="LPL">
+			<DA name="vendor" fc="DC" bType="VisString255" />
+			<DA name="swRev" fc="DC" bType="VisString255" />
+			<DA name="d" fc="DC" bType="VisString255" />
+			<DA name="configRev" fc="DC" bType="VisString255" />
+			<DA name="ldNs" fc="EX" bType="VisString255" />
+		</DOType>
+		<DOType id="E04F501Application.CALH0.NamPlt" cdc="LPL">
+			<DA name="vendor" fc="DC" bType="VisString255" />
+			<DA name="swRev" fc="DC" bType="VisString255" />
+			<DA name="d" fc="DC" bType="VisString255" />
+			<DA name="configRev" fc="DC" bType="VisString255" />
+		</DOType>
+		<DOType id="E04F501VI3p1_OperationalValues.PPRE_MMXU1.TotW" cdc="MV">
+			<DA name="instMag" fc="MX" bType="Struct" type="E04F501CB1_Fundamental.FPRE_MMXU1.PPV.phsAB.instCVal.mag" />
+			<DA name="mag" fc="MX" bType="Struct" type="E04F501CB1_Fundamental.FPRE_MMXU1.PPV.phsAB.instCVal.mag" />
+			<DA name="q" fc="MX" bType="Quality" />
+			<DA name="t" fc="MX" bType="Timestamp" />
+			<DA name="units" fc="CF" bType="Struct" type="E04F501CB1_Fundamental.FPRE_MMXU1.PPV.phsAB.units" />
+			<DA name="db" fc="CF" bType="INT32U" />
+		</DOType>
+		<DOType id="E04F501VI3p1_FundSymComp.XPRE_MSQI1.SeqA" cdc="SEQ">
+			<SDO name="c1" type="E04F501CB1_Fundamental.FPRE_MMXU1.PPV.phsAB" />
+			<SDO name="c2" type="E04F501CB1_Fundamental.FPRE_MMXU1.PPV.phsAB" />
+			<SDO name="c3" type="E04F501CB1_Fundamental.FPRE_MMXU1.PPV.phsAB" />
+			<DA name="seqT" fc="MX" bType="Enum" type="seqT" />
+		</DOType>
+		<DOType id="E04F501Application.LLN0.LEDRs" cdc="SPC">
+			<DA name="origin" fc="ST" bType="Struct" type="E04F501Application.LLN0.Mod.origin" />
+			<DA name="ctlNum" fc="ST" bType="INT8U" />
+			<DA name="stVal" fc="ST" bType="BOOLEAN" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+			<DA name="Oper" fc="CO" bType="Struct" type="E04F501Application.LLN0.LEDRs.Oper" />
+			<DA name="ctlModel" fc="CF" bType="Enum" type="ctlModel" />
+		</DOType>
+		<DOType id="E04F501Application.CALH0.GrAlm" cdc="SPS">
+			<DA name="stVal" fc="ST" bType="BOOLEAN" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+		</DOType>
+		<DOType id="E04F501Application.LPHD0.PrcModIna" cdc="SPS">
+			<DA name="stVal" fc="ST" bType="BOOLEAN" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+			<DA name="subEna" fc="SV" bType="BOOLEAN" />
+			<DA name="subVal" fc="SV" bType="BOOLEAN" />
+			<DA name="subQ" fc="SV" bType="Quality" />
+			<DA name="subID" fc="SV" bType="VisString64" />
+			<DA name="dataNs" fc="EX" bType="VisString255" />
+		</DOType>
+		<DOType id="E04F501CB1_Fundamental.FPRE_MMXU1.PhV" cdc="WYE">
+			<SDO name="phsA" type="E04F501CB1_Fundamental.FPRE_MMXU1.PPV.phsAB" />
+			<SDO name="phsB" type="E04F501CB1_Fundamental.FPRE_MMXU1.PPV.phsAB" />
+			<SDO name="phsC" type="E04F501CB1_Fundamental.FPRE_MMXU1.PPV.phsAB" />
+			<SDO name="res" type="E04F501CB1_Fundamental.FPRE_MMXU1.PPV.phsAB" />
+		</DOType>
+		<DOType id="E04F501VI3p1_OperationalValues.PPRE_MMXU1.W" cdc="WYE">
+			<SDO name="phsA" type="E04F501VI3p1_OperationalValues.PPRE_MMXU1.W.phsA" />
+			<SDO name="phsB" type="E04F501VI3p1_OperationalValues.PPRE_MMXU1.W.phsA" />
+			<SDO name="phsC" type="E04F501VI3p1_OperationalValues.PPRE_MMXU1.W.phsA" />
+		</DOType>
+		<DOType id="E04F501VI3p1_OperationalValues.RPRE_MMXU1.PhV" cdc="WYE">
+			<SDO name="phsA" type="E04F501VI3p1_OperationalValues.PPRE_MMXU1.W.phsA" />
+			<SDO name="phsB" type="E04F501VI3p1_OperationalValues.PPRE_MMXU1.W.phsA" />
+			<SDO name="phsC" type="E04F501VI3p1_OperationalValues.PPRE_MMXU1.W.phsA" />
+			<SDO name="res" type="E04F501VI3p1_OperationalValues.PPRE_MMXU1.W.phsA" />
+		</DOType>
+		<DOType id="E04F501PowS_MeasPointI3ph1.TCTR1.ARtg" cdc="ASG">
+			<DA name="units" fc="CF" bType="Struct" type="E04F501CB1.XCBR1.SumSwARs.units" />
+			<DA name="minVal" fc="CF" bType="Struct" type="E04F501PowS_MeasPointI3ph1.TCTR1.ARtg.minVal" />
+			<DA name="maxVal" fc="CF" bType="Struct" type="E04F501PowS_MeasPointI3ph1.TCTR1.ARtg.minVal" />
+			<DA name="stepSize" fc="CF" bType="Struct" type="E04F501PowS_MeasPointI3ph1.TCTR1.ARtg.minVal" />
+			<DA name="setMag" fc="SG" bType="Struct" type="E04F501PowS_MeasPointI3ph1.TCTR1.ARtg.setMag" />
+		</DOType>
+		<DOType id="E04F501CB1.XCBR1.SumSwARs" cdc="BCR">
+			<DA name="actVal" fc="ST" bType="INT32" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+			<DA name="units" fc="CF" bType="Struct" type="E04F501CB1.XCBR1.SumSwARs.units" />
+			<DA name="pulsQty" fc="CF" bType="FLOAT32" />
+		</DOType>
+		<DOType id="E04F501CB1.XCBR1.Pos" cdc="DPC">
+			<DA name="origin" fc="ST" bType="Struct" type="E04F501Application.LLN0.LocSta.origin" />
+			<DA name="ctlNum" fc="ST" bType="INT8U" />
+			<DA name="stVal" fc="ST" bType="Dbpos" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+			<DA name="stSeld" fc="ST" bType="BOOLEAN" />
+			<DA name="pulseConfig" fc="CF" bType="Struct" type="E04F501CB1.XCBR1.Pos.pulseConfig" />
+			<DA name="ctlModel" fc="CF" bType="Enum" type="CtlModelKind" />
+			<DA name="subEna" fc="SV" bType="BOOLEAN" />
+			<DA name="subVal" fc="SV" bType="Dbpos" />
+			<DA name="subQ" fc="SV" bType="Quality" />
+			<DA name="subID" fc="SV" bType="VisString64" />
+		</DOType>
+		<DOType id="E04F501Application.LTIM0.Mod" cdc="ENC">
+			<DA name="stVal" fc="ST" bType="Enum" type="E04F501Application.LTIM0.Mod.stVal" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+			<DA name="ctlModel" fc="CF" bType="Enum" type="CtlModelKind" />
+		</DOType>
+		<DOType id="E04F501CB1.GAPC2.Mod" cdc="ENC">
+			<DA name="origin" fc="ST" bType="Struct" type="E04F501Application.LLN0.LocSta.origin" />
+			<DA name="ctlNum" fc="ST" bType="INT8U" />
+			<DA name="stVal" fc="ST" bType="Enum" type="E04F501Application.LTIM0.Mod.stVal" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+			<DA name="Oper" fc="CO" bType="Struct" type="E04F501CB1.GAPC2.Mod.Oper" />
+			<DA name="ctlModel" fc="CF" bType="Enum" type="CtlModelKind" />
+		</DOType>
+		<DOType id="E04F501Application.LTIM0.Beh" cdc="ENS">
+			<DA name="stVal" fc="ST" bType="Enum" type="E04F501Application.LTIM0.Beh.stVal" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+		</DOType>
+		<DOType id="E04F501Application.LTIM0.Health" cdc="ENS">
+			<DA name="stVal" fc="ST" bType="Enum" type="E04F501Application.LTIM0.Health.stVal" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+		</DOType>
+		<DOType id="E04F501UD1.USER1.Mod" cdc="INC">
+			<DA name="origin" fc="ST" bType="Struct" type="E04F501Application.LLN0.LocSta.origin" />
+			<DA name="ctlNum" fc="ST" bType="INT8U" />
+			<DA name="stVal" fc="ST" bType="INT8" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+			<DA name="Oper" fc="CO" bType="Struct" type="E04F501UD1.USER1.Mod.Oper" />
+			<DA name="ctlModel" fc="CF" bType="Enum" type="CtlModelKind" />
+			<DA name="dataNs" fc="EX" bType="VisString255" />
+		</DOType>
+		<DOType id="E04F501Application.LTIM0.TmOfsTmm" cdc="ING">
+			<DA name="minVal" fc="CF" bType="INT32" />
+			<DA name="maxVal" fc="CF" bType="INT32" />
+			<DA name="stepSize" fc="CF" bType="INT32U" />
+			<DA name="setVal" fc="SG" bType="INT32" />
+		</DOType>
+		<DOType id="E04F501CB1.XCBR1.OpCnt" cdc="INS">
+			<DA name="stVal" fc="ST" bType="INT32" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+		</DOType>
+		<DOType id="E04F501UD1.USER1.Beh" cdc="INS">
+			<DA name="stVal" fc="ST" bType="INT8" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+			<DA name="dataNs" fc="EX" bType="VisString255" />
+		</DOType>
+		<DOType id="E04F501Application.LTIM0.NamPlt" cdc="LPL">
+			<DA name="vendor" fc="DC" bType="VisString255" />
+			<DA name="swRev" fc="DC" bType="VisString255" />
+			<DA name="d" fc="DC" bType="VisString255" />
+			<DA name="configRev" fc="DC" bType="VisString255" />
+			<DA name="lnNs" fc="EX" bType="VisString255" />
+		</DOType>
+		<DOType id="E04F501UD1.USER1.NamPlt" cdc="LPL">
+			<DA name="vendor" fc="DC" bType="VisString255" />
+			<DA name="swRev" fc="DC" bType="VisString255" />
+			<DA name="d" fc="DC" bType="VisString255" />
+			<DA name="configRev" fc="DC" bType="VisString255" />
+			<DA name="lnNs" fc="EX" bType="VisString255" />
+			<DA name="dataNs" fc="EX" bType="VisString255" />
+		</DOType>
+		<DOType id="E04F501Application.LLN0.LocSta" cdc="SPC">
+			<DA name="origin" fc="ST" bType="Struct" type="E04F501Application.LLN0.LocSta.origin" />
+			<DA name="ctlNum" fc="ST" bType="INT8U" />
+			<DA name="stVal" fc="ST" bType="BOOLEAN" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+			<DA name="Oper" fc="CO" bType="Struct" type="E04F501Application.LLN0.LocSta.Oper" />
+			<DA name="ctlModel" fc="CF" bType="Enum" type="CtlModelKind" />
+			<DA name="dataNs" fc="EX" bType="VisString255" />
+		</DOType>
+		<DOType id="E04F501CB1.XCBR1.BlkOpn" cdc="SPC">
+			<DA name="stVal" fc="ST" bType="BOOLEAN" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+			<DA name="ctlModel" fc="CF" bType="Enum" type="CtlModelKind" />
+		</DOType>
+		<DOType id="E04F501Application.LTIM0.TmUseDT" cdc="SPG">
+			<DA name="setVal" fc="SG" bType="BOOLEAN" />
+		</DOType>
+		<DOType id="E04F501Application.LLN0.LocKey" cdc="SPS">
+			<DA name="stVal" fc="ST" bType="BOOLEAN" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+			<DA name="dataNs" fc="EX" bType="VisString255" />
+		</DOType>
+		<DOType id="E04F501Application.LTIM0.TmDT" cdc="SPS">
+			<DA name="stVal" fc="ST" bType="BOOLEAN" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+		</DOType>
+		<DOType id="E04F501CB1.GAPC2.Blk" cdc="SPS">
+			<DA name="stVal" fc="ST" bType="BOOLEAN" />
+			<DA name="q" fc="ST" bType="Quality" />
+			<DA name="t" fc="ST" bType="Timestamp" />
+			<DA name="subEna" fc="SV" bType="BOOLEAN" />
+			<DA name="subVal" fc="SV" bType="BOOLEAN" />
+			<DA name="subQ" fc="SV" bType="Quality" />
+			<DA name="subID" fc="SV" bType="VisString64" />
+		</DOType>
+		<DAType id="E04F501CB1_Fundamental.FPRE_MMXU1.PPV.phsAB.instCVal.mag">
+			<BDA name="f" bType="FLOAT32" />
+		</DAType>
+		<DAType id="E04F501Application.LLN0.Mod.origin">
+			<BDA name="orCat" bType="Enum" type="orCategory" />
+			<BDA name="orIdent" bType="Octet64" />
+		</DAType>
+		<DAType id="E04F501Application.LLN0.Mod.Oper.origin">
+			<BDA name="orCat" bType="Enum" type="orCategory" />
+			<BDA name="orIdent" bType="Octet64" />
+		</DAType>
+		<DAType id="E04F501CB1_Fundamental.FPRE_MMXU1.PPV.phsAB.units">
+			<BDA name="SIUnit" bType="Enum" type="SIUnit" />
+			<BDA name="multiplier" bType="Enum" type="multiplier" />
+		</DAType>
+		<DAType id="E04F501CB1_Fundamental.FPRE_MMXU1.PPV.phsAB.instCVal">
+			<BDA name="mag" bType="Struct" type="E04F501CB1_Fundamental.FPRE_MMXU1.PPV.phsAB.instCVal.mag" />
+			<BDA name="ang" bType="Struct" type="E04F501CB1_Fundamental.FPRE_MMXU1.PPV.phsAB.instCVal.mag" />
+		</DAType>
+		<DAType id="E04F501VI3p1_OperationalValues.PPRE_MMXU1.W.phsA.instCVal">
+			<BDA name="mag" bType="Struct" type="E04F501CB1_Fundamental.FPRE_MMXU1.PPV.phsAB.instCVal.mag" />
+		</DAType>
+		<DAType id="E04F501Application.LLN0.LEDRs.Oper">
+			<BDA name="ctlVal" bType="BOOLEAN" />
+			<BDA name="origin" bType="Struct" type="E04F501Application.LLN0.Mod.Oper.origin" />
+			<BDA name="ctlNum" bType="INT8U" />
+			<BDA name="T" bType="Timestamp" />
+			<BDA name="Test" bType="BOOLEAN" />
+			<BDA name="Check" bType="Check" />
+		</DAType>
+		<DAType id="E04F501CB1.CSWI1.Pos.Cancel">
+			<BDA name="ctlVal" bType="BOOLEAN" />
+			<BDA name="origin" bType="Struct" type="E04F501Application.LLN0.Mod.Oper.origin" />
+			<BDA name="ctlNum" bType="INT8U" />
+			<BDA name="T" bType="Timestamp" />
+			<BDA name="Test" bType="BOOLEAN" />
+		</DAType>
+		<DAType id="E04F501Application.LLN0.Mod.Oper">
+			<BDA name="ctlVal" bType="Enum" type="Mod" />
+			<BDA name="origin" bType="Struct" type="E04F501Application.LLN0.Mod.Oper.origin" />
+			<BDA name="ctlNum" bType="INT8U" />
+			<BDA name="T" bType="Timestamp" />
+			<BDA name="Test" bType="BOOLEAN" />
+			<BDA name="Check" bType="Check" />
+		</DAType>
+		<DAType id="E04F501PowS_MeasPointI3ph1.TCTR1.ARtg.minVal">
+			<BDA name="f" bType="FLOAT32" />
+		</DAType>
+		<DAType id="E04F501PowS_MeasPointI3ph1.TCTR1.ARtg.setMag">
+			<BDA name="f" bType="FLOAT32" />
+		</DAType>
+		<DAType id="E04F501Application.LLN0.LocSta.origin">
+			<BDA name="orCat" bType="Enum" type="OriginatorCategoryKind" />
+			<BDA name="orIdent" bType="Octet64" />
+		</DAType>
+		<DAType id="E04F501Application.LLN0.LocSta.Oper.origin">
+			<BDA name="orCat" bType="Enum" type="OriginatorCategoryKind" />
+			<BDA name="orIdent" bType="Octet64" />
+		</DAType>
+		<DAType id="E04F501CB1.XCBR1.Pos.pulseConfig">
+			<BDA name="cmdQual" bType="Enum" type="ControlOutputKind" />
+			<BDA name="onDur" bType="INT32U" />
+			<BDA name="offDur" bType="INT32U" />
+			<BDA name="numPls" bType="INT32U" />
+		</DAType>
+		<DAType id="E04F501CB1.XCBR1.SumSwARs.units">
+			<BDA name="SIUnit" bType="Enum" type="SIUnitKind" />
+			<BDA name="multiplier" bType="Enum" type="MultiplierKind" />
+		</DAType>
+		<DAType id="E04F501Application.LLN0.LocSta.Oper">
+			<BDA name="ctlVal" bType="BOOLEAN" />
+			<BDA name="origin" bType="Struct" type="E04F501Application.LLN0.LocSta.Oper.origin" />
+			<BDA name="ctlNum" bType="INT8U" />
+			<BDA name="T" bType="Timestamp" />
+			<BDA name="Test" bType="BOOLEAN" />
+			<BDA name="Check" bType="Check" />
+		</DAType>
+		<DAType id="E04F501CB1.GAPC2.Mod.Oper">
+			<BDA name="ctlVal" bType="Enum" type="E04F501Application.LTIM0.Mod.stVal" />
+			<BDA name="origin" bType="Struct" type="E04F501Application.LLN0.LocSta.Oper.origin" />
+			<BDA name="ctlNum" bType="INT8U" />
+			<BDA name="T" bType="Timestamp" />
+			<BDA name="Test" bType="BOOLEAN" />
+			<BDA name="Check" bType="Check" />
+		</DAType>
+		<DAType id="E04F501UD1.USER1.Mod.Oper">
+			<BDA name="ctlVal" bType="INT8" />
+			<BDA name="origin" bType="Struct" type="E04F501Application.LLN0.LocSta.Oper.origin" />
+			<BDA name="ctlNum" bType="INT8U" />
+			<BDA name="T" bType="Timestamp" />
+			<BDA name="Test" bType="BOOLEAN" />
+			<BDA name="Check" bType="Check" />
+		</DAType>
+		<EnumType id="ctlModel">
+			<!--Source: IEC 61850-7-3:2003-->
+			<EnumVal ord="0">status-only</EnumVal>
+			<EnumVal ord="1">direct-with-normal-security</EnumVal>
+			<EnumVal ord="2">sbo-with-normal-security</EnumVal>
+			<EnumVal ord="3">direct-with-enhanced-security</EnumVal>
+			<EnumVal ord="4">sbo-with-enhanced-security</EnumVal>
+		</EnumType>
+		<EnumType id="orCategory">
+			<!--Source: IEC 61850-7-3:2003-->
+			<EnumVal ord="0">not-supported</EnumVal>
+			<EnumVal ord="1">bay-control</EnumVal>
+			<EnumVal ord="2">station-control</EnumVal>
+			<EnumVal ord="3">remote-control</EnumVal>
+			<EnumVal ord="4">automatic-bay</EnumVal>
+			<EnumVal ord="5">automatic-station</EnumVal>
+			<EnumVal ord="6">automatic-remote</EnumVal>
+			<EnumVal ord="7">maintenance</EnumVal>
+			<EnumVal ord="8">process</EnumVal>
+		</EnumType>
+		<EnumType id="multiplier">
+			<!--Source: IEC 61850-7-3:2003-->
+			<EnumVal ord="-24">y</EnumVal>
+			<EnumVal ord="-21">z</EnumVal>
+			<EnumVal ord="-18">a</EnumVal>
+			<EnumVal ord="-15">f</EnumVal>
+			<EnumVal ord="-12">p</EnumVal>
+			<EnumVal ord="-9">n</EnumVal>
+			<EnumVal ord="-6">µ</EnumVal>
+			<EnumVal ord="-3">m</EnumVal>
+			<EnumVal ord="-2">c</EnumVal>
+			<EnumVal ord="-1">d</EnumVal>
+			<EnumVal ord="0"></EnumVal>
+			<EnumVal ord="1">da</EnumVal>
+			<EnumVal ord="2">h</EnumVal>
+			<EnumVal ord="3">k</EnumVal>
+			<EnumVal ord="6">M</EnumVal>
+			<EnumVal ord="9">G</EnumVal>
+			<EnumVal ord="12">T</EnumVal>
+			<EnumVal ord="15">P</EnumVal>
+			<EnumVal ord="18">E</EnumVal>
+			<EnumVal ord="21">Z</EnumVal>
+			<EnumVal ord="24">Y</EnumVal>
+		</EnumType>
+		<EnumType id="SIUnit">
+			<!--Source: IEC 61850-7-3:2003-->
+			<EnumVal ord="1"></EnumVal>
+			<EnumVal ord="2">m</EnumVal>
+			<EnumVal ord="3">kg</EnumVal>
+			<EnumVal ord="4">s</EnumVal>
+			<EnumVal ord="5">A</EnumVal>
+			<EnumVal ord="6">K</EnumVal>
+			<EnumVal ord="7">mol</EnumVal>
+			<EnumVal ord="8">cd</EnumVal>
+			<EnumVal ord="9">deg</EnumVal>
+			<EnumVal ord="10">rad</EnumVal>
+			<EnumVal ord="11">sr</EnumVal>
+			<EnumVal ord="21">Gy</EnumVal>
+			<EnumVal ord="22">q</EnumVal>
+			<EnumVal ord="23">°C</EnumVal>
+			<EnumVal ord="24">Sv</EnumVal>
+			<EnumVal ord="25">F</EnumVal>
+			<EnumVal ord="26">C</EnumVal>
+			<EnumVal ord="27">S</EnumVal>
+			<EnumVal ord="28">H</EnumVal>
+			<EnumVal ord="29">V</EnumVal>
+			<EnumVal ord="30">ohm</EnumVal>
+			<EnumVal ord="31">J</EnumVal>
+			<EnumVal ord="32">N</EnumVal>
+			<EnumVal ord="33">Hz</EnumVal>
+			<EnumVal ord="34">lx</EnumVal>
+			<EnumVal ord="35">Lm</EnumVal>
+			<EnumVal ord="36">Wb</EnumVal>
+			<EnumVal ord="37">T</EnumVal>
+			<EnumVal ord="38">W</EnumVal>
+			<EnumVal ord="39">Pa</EnumVal>
+			<EnumVal ord="41">m²</EnumVal>
+			<EnumVal ord="42">m³</EnumVal>
+			<EnumVal ord="43">m/s</EnumVal>
+			<EnumVal ord="44">m/s²</EnumVal>
+			<EnumVal ord="45">m³/s</EnumVal>
+			<EnumVal ord="46">m/m³</EnumVal>
+			<EnumVal ord="47">M</EnumVal>
+			<EnumVal ord="48">kg/m³</EnumVal>
+			<EnumVal ord="49">m²/s</EnumVal>
+			<EnumVal ord="50">W/m K</EnumVal>
+			<EnumVal ord="51">J/K</EnumVal>
+			<EnumVal ord="52">ppm</EnumVal>
+			<EnumVal ord="53">1/s</EnumVal>
+			<EnumVal ord="54">rad/s</EnumVal>
+			<EnumVal ord="61">VA</EnumVal>
+			<EnumVal ord="62">Watts</EnumVal>
+			<EnumVal ord="63">VAr</EnumVal>
+			<EnumVal ord="64">phi</EnumVal>
+			<EnumVal ord="65">cos(phi)</EnumVal>
+			<EnumVal ord="66">Vs</EnumVal>
+			<EnumVal ord="67">V²</EnumVal>
+			<EnumVal ord="68">As</EnumVal>
+			<EnumVal ord="69">A²</EnumVal>
+			<EnumVal ord="70">A²t</EnumVal>
+			<EnumVal ord="71">VAh</EnumVal>
+			<EnumVal ord="72">Wh</EnumVal>
+			<EnumVal ord="73">VArh</EnumVal>
+			<EnumVal ord="74">V/Hz</EnumVal>
+		</EnumType>
+		<EnumType id="dir">
+			<!--Source: IEC 61850-7-3:2003-->
+			<EnumVal ord="0">unknown</EnumVal>
+			<EnumVal ord="1">forward</EnumVal>
+			<EnumVal ord="2">backward</EnumVal>
+			<EnumVal ord="3">both</EnumVal>
+		</EnumType>
+		<EnumType id="seqT">
+			<!--Source: IEC 61850-7-3:2003-->
+			<EnumVal ord="0">pos-neg-zero</EnumVal>
+			<EnumVal ord="1">dir-quad-zero</EnumVal>
+		</EnumType>
+		<EnumType id="Beh">
+			<!--Source: IEC 61850-7-4:2003-->
+			<EnumVal ord="1">on</EnumVal>
+			<EnumVal ord="2">blocked</EnumVal>
+			<EnumVal ord="3">test</EnumVal>
+			<EnumVal ord="4">test/blocked</EnumVal>
+			<EnumVal ord="5">off</EnumVal>
+		</EnumType>
+		<EnumType id="Health">
+			<!--Source: IEC 61850-7-4:2003-->
+			<EnumVal ord="1">Ok</EnumVal>
+			<EnumVal ord="2">Warning</EnumVal>
+			<EnumVal ord="3">Alarm</EnumVal>
+		</EnumType>
+		<EnumType id="Mod">
+			<!--Source: IEC 61850-7-4:2003-->
+			<EnumVal ord="1">on</EnumVal>
+			<EnumVal ord="2">blocked</EnumVal>
+			<EnumVal ord="3">test</EnumVal>
+			<EnumVal ord="4">test/blocked</EnumVal>
+			<EnumVal ord="5">off</EnumVal>
+		</EnumType>
+		<EnumType id="ControlOutputKind">
+			<!--Source: IEC 61850-7-3:2007A-->
+			<EnumVal ord="0">pulse</EnumVal>
+			<EnumVal ord="1">persistent</EnumVal>
+		</EnumType>
+		<EnumType id="CtlModelKind">
+			<!--Source: IEC 61850-7-3:2007A-->
+			<EnumVal ord="0">status-only</EnumVal>
+			<EnumVal ord="1">direct-with-normal-security</EnumVal>
+			<EnumVal ord="2">sbo-with-normal-security</EnumVal>
+			<EnumVal ord="3">direct-with-enhanced-security</EnumVal>
+			<EnumVal ord="4">sbo-with-enhanced-security</EnumVal>
+		</EnumType>
+		<EnumType id="OriginatorCategoryKind">
+			<!--Source: IEC 61850-7-3:2007A-->
+			<EnumVal ord="0">not-supported</EnumVal>
+			<EnumVal ord="1">bay-control</EnumVal>
+			<EnumVal ord="2">station-control</EnumVal>
+			<EnumVal ord="3">remote-control</EnumVal>
+			<EnumVal ord="4">automatic-bay</EnumVal>
+			<EnumVal ord="5">automatic-station</EnumVal>
+			<EnumVal ord="6">automatic-remote</EnumVal>
+			<EnumVal ord="7">maintenance</EnumVal>
+			<EnumVal ord="8">process</EnumVal>
+		</EnumType>
+		<EnumType id="MultiplierKind">
+			<!--Source: IEC 61850-7-3:2007A-->
+			<EnumVal ord="-24">y</EnumVal>
+			<EnumVal ord="-21">z</EnumVal>
+			<EnumVal ord="-18">a</EnumVal>
+			<EnumVal ord="-15">f</EnumVal>
+			<EnumVal ord="-12">p</EnumVal>
+			<EnumVal ord="-9">n</EnumVal>
+			<EnumVal ord="-6">µ</EnumVal>
+			<EnumVal ord="-3">m</EnumVal>
+			<EnumVal ord="-2">c</EnumVal>
+			<EnumVal ord="-1">d</EnumVal>
+			<EnumVal ord="0"></EnumVal>
+			<EnumVal ord="1">da</EnumVal>
+			<EnumVal ord="2">h</EnumVal>
+			<EnumVal ord="3">k</EnumVal>
+			<EnumVal ord="6">M</EnumVal>
+			<EnumVal ord="9">G</EnumVal>
+			<EnumVal ord="12">T</EnumVal>
+			<EnumVal ord="15">P</EnumVal>
+			<EnumVal ord="18">E</EnumVal>
+			<EnumVal ord="21">Z</EnumVal>
+			<EnumVal ord="24">Y</EnumVal>
+		</EnumType>
+		<EnumType id="SIUnitKind">
+			<!--Source: IEC 61850-7-3:2007A-->
+			<EnumVal ord="1"></EnumVal>
+			<EnumVal ord="2">m</EnumVal>
+			<EnumVal ord="3">kg</EnumVal>
+			<EnumVal ord="4">s</EnumVal>
+			<EnumVal ord="5">A</EnumVal>
+			<EnumVal ord="6">K</EnumVal>
+			<EnumVal ord="7">mol</EnumVal>
+			<EnumVal ord="8">cd</EnumVal>
+			<EnumVal ord="9">deg</EnumVal>
+			<EnumVal ord="10">rad</EnumVal>
+			<EnumVal ord="11">sr</EnumVal>
+			<EnumVal ord="21">Gy</EnumVal>
+			<EnumVal ord="22">Bq</EnumVal>
+			<EnumVal ord="23">°C</EnumVal>
+			<EnumVal ord="24">Sv</EnumVal>
+			<EnumVal ord="25">F</EnumVal>
+			<EnumVal ord="26">C</EnumVal>
+			<EnumVal ord="27">S</EnumVal>
+			<EnumVal ord="28">H</EnumVal>
+			<EnumVal ord="29">V</EnumVal>
+			<EnumVal ord="30">ohm</EnumVal>
+			<EnumVal ord="31">J</EnumVal>
+			<EnumVal ord="32">N</EnumVal>
+			<EnumVal ord="33">Hz</EnumVal>
+			<EnumVal ord="34">lx</EnumVal>
+			<EnumVal ord="35">Lm</EnumVal>
+			<EnumVal ord="36">Wb</EnumVal>
+			<EnumVal ord="37">T</EnumVal>
+			<EnumVal ord="38">W</EnumVal>
+			<EnumVal ord="39">Pa</EnumVal>
+			<EnumVal ord="41">m²</EnumVal>
+			<EnumVal ord="42">m³</EnumVal>
+			<EnumVal ord="43">m/s</EnumVal>
+			<EnumVal ord="44">m/s²</EnumVal>
+			<EnumVal ord="45">m³/s</EnumVal>
+			<EnumVal ord="46">m/m³</EnumVal>
+			<EnumVal ord="47">M</EnumVal>
+			<EnumVal ord="48">kg/m³</EnumVal>
+			<EnumVal ord="49">m²/s</EnumVal>
+			<EnumVal ord="50">W/m K</EnumVal>
+			<EnumVal ord="51">J/K</EnumVal>
+			<EnumVal ord="52">ppm</EnumVal>
+			<EnumVal ord="53">1/s</EnumVal>
+			<EnumVal ord="54">rad/s</EnumVal>
+			<EnumVal ord="55">W/m²</EnumVal>
+			<EnumVal ord="56">J/m²</EnumVal>
+			<EnumVal ord="57">S/m</EnumVal>
+			<EnumVal ord="58">K/s</EnumVal>
+			<EnumVal ord="59">Pa/s</EnumVal>
+			<EnumVal ord="60">J/kg K</EnumVal>
+			<EnumVal ord="61">VA</EnumVal>
+			<EnumVal ord="62">Watts</EnumVal>
+			<EnumVal ord="63">VAr</EnumVal>
+			<EnumVal ord="64">phi</EnumVal>
+			<EnumVal ord="65">cos(phi)</EnumVal>
+			<EnumVal ord="66">Vs</EnumVal>
+			<EnumVal ord="67">V²</EnumVal>
+			<EnumVal ord="68">As</EnumVal>
+			<EnumVal ord="69">A²</EnumVal>
+			<EnumVal ord="70">A²t</EnumVal>
+			<EnumVal ord="71">VAh</EnumVal>
+			<EnumVal ord="72">Wh</EnumVal>
+			<EnumVal ord="73">VArh</EnumVal>
+			<EnumVal ord="74">V/Hz</EnumVal>
+			<EnumVal ord="75">Hz/s</EnumVal>
+			<EnumVal ord="76">char</EnumVal>
+			<EnumVal ord="77">char/s</EnumVal>
+			<EnumVal ord="78">kgm²</EnumVal>
+			<EnumVal ord="79">dB</EnumVal>
+			<EnumVal ord="80">J/Wh</EnumVal>
+			<EnumVal ord="81">W/s</EnumVal>
+			<EnumVal ord="82">l/s</EnumVal>
+			<EnumVal ord="83">dBm</EnumVal>
+		</EnumType>
+		<EnumType id="E04F501Application.LTIM0.Beh.stVal">
+			<!--Source: IEC 61850-7-4:2007A-->
+			<EnumVal ord="1">on</EnumVal>
+			<EnumVal ord="2">on-blocked</EnumVal>
+			<EnumVal ord="3">test</EnumVal>
+			<EnumVal ord="4">test/blocked</EnumVal>
+			<EnumVal ord="5">off</EnumVal>
+		</EnumType>
+		<EnumType id="E04F501Application.LTIM0.Health.stVal">
+			<!--Source: IEC 61850-7-4:2007A-->
+			<EnumVal ord="1">Ok</EnumVal>
+			<EnumVal ord="2">Warning</EnumVal>
+			<EnumVal ord="3">Alarm</EnumVal>
+		</EnumType>
+		<EnumType id="E04F501Application.LTIM0.Mod.stVal">
+			<!--Source: IEC 61850-7-4:2007A-->
+			<EnumVal ord="1">on</EnumVal>
+			<EnumVal ord="2">on-blocked</EnumVal>
+			<EnumVal ord="3">test</EnumVal>
+			<EnumVal ord="4">test/blocked</EnumVal>
+			<EnumVal ord="5">off</EnumVal>
+		</EnumType>
+	</DataTypeTemplates>
+</SCL>

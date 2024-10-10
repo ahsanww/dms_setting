@@ -1,0 +1,43 @@
+ <?php $no=0; foreach($data->result_array() as $i):?>
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="info-box">
+            <div id="gauge_<?php echo $i['item_id']?>" style="width:100px;height:100px;padding:-30px;margin-top:-28px;margin-bottom:-10px"></div>
+              <div class="info-box-content" style="margin-left:-8px;">
+                <span class="info-box-text"><?php echo $i['name']?></span>
+                <h4 class="item_<?php echo $i['alias']?>" class="info-box-number">
+                 0
+                </h4>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+        </div>
+        <?php 
+        $rack=$i['rack_location'];
+        $type=$i['type'];
+        $buff_port_type=$i['port_type'];
+        $port_type="";
+        $ser="";
+        $tcp="";
+        $comm="";
+        if($buff_port_type==0){
+          $port_type="RS485";
+          $comm="modbus";
+          $tcp="hidden";
+        }
+        else if($buff_port_type==1){
+          $port_type="TCP/IP";
+          $comm="modbus";
+          $ser="hidden";
+        }
+        else if($buff_port_type==2){
+          $port_type="IEC61850";
+          $comm="IEC61850";
+          $ser="hidden";
+        }
+        $ip=$i['ip'];
+        $port_number=$i['port_number'];
+        $kode=$i['kode_mesin'];
+        $id_device=$i['id_device'];
+        ?>
+        <?php $no++; endforeach;?> 
